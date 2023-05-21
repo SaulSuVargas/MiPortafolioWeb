@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ICONOS (REMIXICON) -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <! ------- ICONOS (UNICONS) ------- >
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!------- SSWIPER CSS ------->
+        <link rel="stylesheet" href="">
+        
+        <!------- STYLE CSS -------->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Portafolio Web</title>
+    </head>
+    <body>
+        <!--- ------- SECCION DEL HEADER ------->
+        <header class="header" id="header">
+            <nav class="nav container">     
+                <a href="" class="nav_logo">SaulSu</a>
+
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list grid">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class="uil uil-estate nav_icon"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#info" class="nav_link">
+                                <i class="uil uil-user nav_icon"></i> Información
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="uil uil-file-alt nav_icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#servicios" class="nav_link">
+                                <i class="uil uil-list-ul nav_icon"></i></i> Servicios
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#portfolio" class="nav_link">
+                                <i class="uil uil-briefcase-alt nav_icon"></i> Portafolio
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">
+                                <i class="uil uil-message nav_icon"></i> Contáctame
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav_close" id="nav-cerrar"></i>
+                </div>
+                <div class="nav_btns">
+                    <!-- CAMBAR DE TEMA -->
+                    <i class="uil uil-moon cambiar-tema" id="tema-boton"></i>
+                    <div class="nav_togle" id="nav-togle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-------- PRICIPAL ------->
+        <main class="main">
+            <!--==================== SECCION HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+                    <div class="home_contenido grid">
+                        <div class="home_social">
+                            <a href="https://www.linkedin.com/in/lidio-saul-su-vargas-547982247/" target="_blank" class="home_social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/SaulSuVargas" target="_blank" class="home_social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/saulsuvargas/" target="_blank" class="home_social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                        </div>
+
+                        <div class="home_img">
+                            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    
+                                    <image class="home_blob-img" x='12' y='18' xlink:href="img/perfil.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home_datos">
+                            <h1 class="home_titulo">Hola! Soy Saul Su</h1>
+                            <H3 class="home_subtitulo">ING de Software</H3>
+                            <p class="home_descripcion">Soy un estudiante de la carrera de ing de software, con conocimeintos intermedios en desarrollo web, java, python y js.
+                                Y porsupuesto con muchas ganas de poner en practica mis habilidades!
+                            </p>
+                            <a href="#contact" class="boton boton-flex">
+                                Contáctame <i class="uil uil-message boton_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home_scrol">
+                        <a href="#info" class="home_scrol-boton boton-flex">
+                            <i class="uil uil-mouse-alt home_scrol-mouse"></i>
+                            <span class="home_scrol-text">Desliza hacia abajo</span>
+                            <i class="uil uil-arrow-down home_scrol-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SECCION INFO ====================-->
+            <section class="info section" id="info">
+                <h2 class="section__titulo">Sobre mí</h2>
+                <span class="section__subtitulo">¿Quien es Su?</span>
+
+                <div class="info_container container grid">
+                    <img src="img/info.png" class="info_img" alt="">
+
+                    <div class="info_datos">
+                        <p class="info_descripcion">Hola! Soy el estudiante Saul Su, aposionado en la programacion, actulamente cursandola. Pero con conocimientos basicos e intermedios en varios lenguajes.</p>
+                        
+                        <div class="info_datos-p">
+                            <div>
+                                <span class="info-titulo">+02</span>
+                                <span class="info-edad">Años <br> estudiando</span> 
+                            </div>
+
+                            <div>
+                                <span class="info-titulo">+15</span>
+                                <span class="info-edad">Proyectos <br> completados</span> 
+                            </div>
+
+                            <div>
+                                <span class="info-titulo">+10</span>
+                                <span class="info-edad">Cursos <br> completados</span> 
+                            </div>
+                        </div>
+
+                        <div class="info_botones">
+                            <a href="https://saulsuvargas.github.io/Micv/" target="_blank" class="boton boton-flex">
+                               Descargar CV<i class="uil uil-download-alt boton boton_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SECCION SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__titulo">Skills</h2>
+                <span class="section__subtitulo">Mi nivel técnico</span>
+                <div class="skil_container container grid">
+                    <div>
+                        <!-- SKILL 1 -->
+                        <div class="skil_contenido skil_abrir">
+                            <div class="skil_header">
+                                <i class="uil uil-brackets-curly skil_icon"></i>
+                                <div>
+                                    <h1 class="skil_titulo">Frontend Developer</h1>
+                                    <span class="skil_subtitulo">Mas de 1 año en practicas</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skil_arrow"></i>
+                            </div>
+
+                            <div class="skil_lista grid">
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">HTML</h3>
+                                        <span class="skil_number">80%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_html"></span>
+                                    </div>
+                                </div>
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">CSS</h3>
+                                        <span class="skil_number">70%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_css"></span>
+                                    </div>
+                                </div>
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">JavaScript</h3>
+                                        <span class="skil_number">60%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_js"></span>
+                                    </div>
+                                </div>
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">REACT</h3>
+                                        <span class="skil_number">40%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_react"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 2 -->
+                        <div class="skil_contenido skil_cerrar">
+                            <div class="skil_header">
+                                <i class="uil uil-server-network skil_icon"></i>
+                                <div>
+                                    <h1 class="skil_titulo">Backend Developer</h1>
+                                    <span class="skil_subtitulo">Mas de 1 año en practicas</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skil_arrow"></i>
+                            </div>
+
+                            <div class="skil_lista grid">
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">PHP</h3>
+                                        <span class="skil_number">60%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_php"></span>
+                                    </div>
+                                </div>
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">Node Js</h3>
+                                        <span class="skil_number">70%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_nodejs"></span>
+                                    </div>
+                                </div>
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">Python</h3>
+                                        <span class="skil_number">80%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_py"></span>
+                                    </div>
+                                </div>
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">Ruby</h3>
+                                        <span class="skil_number">50%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_ruby"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- SKILL 3 -->
+                        <div class="skil_contenido skil_cerrar">
+                            <div class="skil_header">
+                                <i class="uil uil-database-alt skil_icon"></i>
+                                <div>
+                                    <h1 class="skil_titulo">Database</h1>
+                                    <span class="skil_subtitulo">Mas de 1 año en practicas</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skil_arrow"></i>
+                            </div>
+
+                            <div class="skil_lista grid">
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">Oracle</h3>
+                                        <span class="skil_number">80%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_oracle"></span>
+                                    </div>
+                                </div>
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">MySQL</h3>
+                                        <span class="skil_number">70%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_sql"></span>
+                                    </div>
+                                </div>
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">MongoDB</h3>
+                                        <span class="skil_number">60%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_db"></span>
+                                    </div>
+                                </div>
+                                <div class="skil_datos">
+                                    <div class="skil_titulos">
+                                        <h3 class="skil_name">PostgreSQL</h3>
+                                        <span class="skil_number">50%</span>
+                                    </div>
+                                    <div class="skil_bar">
+                                        <span class="skil_porcentaje skil_postgre"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SECCION TRAYECTORIA ====================-->
+            <section class="viaje section">
+                <h2 class="section__titulo">Mi Trayectoria</h2>
+                <span class="section__subtitulo">Mi viaje personal</span>
+                <div class="viaje_container container">
+                    <div class="viaje_tabs">
+                        <div class="viaje_boton boton-flex viaje_active" data-target="#educacion">
+                            <i class="uil uil-graduation-cap viaje_icon"></i>
+                            Educación
+                        </div>
+
+                        <div class="viaje_boton boton-flex" data-target="#experiencia">
+                            <i class="uil uil-briefcase-alt viaje_icon"></i>
+                            Experiencia
+                        </div>
+                    </div>
+
+                    <div class="viaje_sections">
+                        <!------ SECCIONES DE TRAYECTORIAAAA - educacion ------>
+                        <div class="viaje_contenido viaje_active" data-content id="educacion">
+                            <!-- SECCION 1 -->
+                            <div class="viaje_datos">
+                                <div>
+                                    <h3 class="viaje_titulo">SENATI (Servicio Nacional de Adiestramiento en Trabajo Industrial)</h3>
+                                    <span class="viaje_subtitulo">Peru - Instituto</span>
+                                    <div class="viaje_caendario">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - 2023
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <span class="viaje_ronda"></span>
+                                    <span class="viaje_linea"></span>
+                                </div>
+                            </div>
+
+                            <!-- SECCION 2 -->
+                            <div class="viaje_datos">
+                                <div></div>
+
+                                <div>
+                                    <span class="viaje_ronda"></span>
+                                    <span class="viaje_linea"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="viaje_titulo">FreeCodeCamp</h3>
+                                    <span class="viaje_subtitulo">Curso de Desarrolo Web</span>
+                                    <div class="viaje_caendario">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SECCION 3 -->
+                            <div class="viaje_datos">
+                                <div>
+                                    <h3 class="viaje_titulo">Cisco</h3>
+                                    <span class="viaje_subtitulo">Curso de Python</span>
+                                    <div class="viaje_caendario">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - 2022
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <span class="viaje_ronda"></span>
+                                    <span class="viaje_linea"></span>
+                                </div>
+                            </div>
+
+
+                            <!-- SECCION 4 -->
+                            <div class="viaje_datos">
+                                <div></div>
+
+                                <div>
+                                    <span class="viaje_ronda"></span>
+                                    <!--<span class="viaje_linea"></span>-->
+                                </div>
+
+                                <div>
+                                    <h3 class="viaje_titulo">Open Bootcamp</h3>
+                                    <span class="viaje_subtitulo">Conceptos de la programación</span>
+                                    <div class="viaje_caendario">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        10/2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!------ SECCIONES DE TRAYECTORIAAAA - Experiencia ------>
+                        <div class="viaje_contenido" data-content id="experiencia">
+                            <!-- SECCION 1 -->
+                            <div class="viaje_datos">
+                                <div>
+                                    <h3 class="viaje_titulo">Formulario de login</h3>
+                                    <span class="viaje_subtitulo">Proyecto personal</span>
+                                    <div class="viaje_caendario">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        08/2022
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <span class="viaje_ronda"></span>
+                                    <span class="viaje_linea"></span>
+                                </div>
+                            </div>
+
+                            <!-- SECCION 2 -->
+                            <div class="viaje_datos">
+                                <div></div>
+
+                                <div>
+                                    <span class="viaje_ronda"></span>
+                                    <span class="viaje_linea"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="viaje_titulo">SENATI WEBSITE</h3>
+                                    <span class="viaje_subtitulo">Proyecto academico</span>
+                                    <div class="viaje_caendario">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        01/202
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <!-- SECCION 3 -->
+                            <div class="viaje_datos">
+                                <div>
+                                    <h3 class="viaje_titulo">GSHOCK WEBSITE WEBSITE</h3>
+                                    <span class="viaje_subtitulo">Proyecto personal</span>
+                                    <div class="viaje_caendario">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        03/2023
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <span class="viaje_ronda"></span>
+                                    <span class="viaje_linea"></span>
+                                </div>
+                            </div>
+                            <!-- SECCION 4 --->
+                            <div class="viaje_datos">
+                                <div></div>
+
+                                <div>
+                                    <span class="viaje_ronda"></span>
+                                    <!--<span class="viaje_linea"></span>-->
+                                </div>
+
+                                <div>
+                                    <h3 class="viaje_titulo">ALIANZA LIMA WEB</h3>
+                                    <span class="viaje_subtitulo">Proyecto monetizado</span>
+                                    <div class="viaje_caendario">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        04/2023
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=================== SECCION SERVICIOS ====================-->
+            <section class="servi section" id="servicios">
+                <h2 class="section__titulo">Servicios</h2>
+                <span class="section__subtitulo">¿Que ofrezco?</span>
+
+                <div class="servi_container container grid">
+                    <!---------  SERVICIO 1 --------->
+                    <div class="servi_contenido">
+                        <div>
+                            <i class="uil uil-arrow servi_icon"></i>
+                            <h3 class="servi_titulo">Desarrollador <br> de Software</h3>
+                        </div>
+
+                        <span class="boton boton-flex boton-smal boton-link servi_boton">
+                            Ver más
+                            <i class="uil uil-arrow-right boton_icon"></i>
+                        </span>
+
+                        <div class="servi_model">
+                            <div class="servi_model-contenido">
+                                <h4 class="servi_model-titulo">Desarrollador <br> de software</h4>
+                                <i class="uil uil-times services_model-cerrar"></i>
+
+                                <ul class="servi_model-servis grid">
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Interfaces graficas de escritiorio.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Desarrollo de aplicaciones web.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Diseño y maquetado del Software.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Revisar el funcionamiento del software.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Mantenimiento del Software.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------  SERVICIO 2 --------->
+                    <div class="servi_contenido">
+                        <div>
+                            <i class="uil uil-window servi_icon"></i>
+                            <h3 class="servi_titulo">Desarrollador <br> Web</h3>
+                        </div>
+
+                        <span class="boton boton-flex boton-smal boton-link servi_boton">
+                            Ver más
+                            <i class="uil uil-arrow-right boton_icon"></i>
+                        </span>
+
+                        <div class="servi_model">
+                            <div class="servi_model-contenido">
+                                <h4 class="servi_model-titulo">Desarrollador <br> Web</h4>
+                                <i class="uil uil-times services_model-cerrar"></i>
+
+                                <ul class="servi_model-servis grid">
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Creación de paginas web.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Mantenimiento y actualización de sitios web.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Desarrollo de características y funcionalidades.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Pruebas y solución de errores de la pagina web.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Trabajo en equipo.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------  SERVICIO 3 --------->
+                    <div class="servi_contenido">
+                        <div>
+                            <i class="uil uil-database servi_icon"></i>
+                            <h3 class="servi_titulo">Gestor <br> de base de datos</h3>
+                        </div>
+
+                        <span class="boton boton-flex boton-smal boton-link servi_boton">
+                            Ver más
+                            <i class="uil uil-arrow-right boton_icon"></i>
+                        </span>
+
+                        <div class="servi_model">
+                            <div class="servi_model-contenido">
+                                <h4 class="servi_model-titulo">Gestor <br> de base de datos</h4>
+                                <i class="uil uil-times services_model-cerrar"></i>
+
+                                <ul class="servi_model-servis grid">
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Creación y mantenimiento de bases de datos.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Optimización de bases de datos.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Diseño de bases de datos.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Realización de copias de seguridad y restauración de bases de datos.</p>
+                                    </li>
+                                    <li class="servi_model-servi">
+                                        <i class="uil uil-check-circle servi_model-icon"></i>
+                                        <p>Comunicación y trabajo con otros miembros del equipo.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SECCION PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__titulo">Mi Portafolio</h2>
+                <span class="section__subtitulo">Trabajos recientes</span>
+            
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter="all">Todos</span>
+                    <span class="work__item" data-filter=".web">Web</span>
+                    <span class="work__item" data-filter=".app">App</span>
+                    <span class="work__item" data-filter=".certificacion">Certificaciones</span>
+                </div>
+
+                <div class="work__container container grid">
+                    <div class="work__card mix web">
+                        <img src="img/senati.png" alt="" class="work__img">
+                        <h3 class="work__title">SENATI WEBSITE</h3>
+                        <span class="work__button">Ver más
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                        <div class="portafolio__item-details">
+                            <h3 class="details_title">Proyecto academico, basado en mi instituto.</h3>
+                            <p class="details_descripcion">Esta pagina web fue hecha,a base de un proyecto, el cual nos solicitaron como nota final hacer una pagina responsive de cualquier tema, y elegi mi instituto.</p>
+                            <ul class="details_info">
+                                <li>Creación : <span>10 septiembre 2022</span></li>
+                                <li>Lenguajes : <span>HTML - CSS - JAVASCRIPT</span></li>
+                                <li>Rol : <span>Frontend</span></li>
+                                <li>Visualizar : <span><a href="https://saulsuvargas.github.io/senatiweb.io/" target="_blank">https://saulsuvargas.github.io/senatiweb.io/</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix web">
+                        <img src="img/alianza2.png" alt="" class="work__img">
+                        <h3 class="work__title">YANGOSTORE - WEBSITE</h3>
+                        <span class="work__button">Ver más
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                        <div class="portafolio__item-details">
+                            <h3 class="details_title">Proyecto monetizado</h3>
+                            <p class="details_descripcion">Este fue mi primer proyecto monetizado, debido a un cliente familiar, el cual me solicito una pagina de venta de productos de alianza lima.</p>
+                            <ul class="details_info">
+                                <li>Creación : <span>4 Abril 2022</span></li>
+                                <li>Lenguajes : <span>HTML CSS JAVASCRIPT</span></li>
+                                <li>Rol : <span>Frontend</span></li>
+                                <li>Visualizar : <span><a href="https://saulsuvargas.github.io/YangoStore/" target="_blank">https://saulsuvargas.github.io/YangoStore/</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix web">
+                        <img src="img/gshock.png" alt="" class="work__img">
+                        <h3 class="work__title">GSHOCK - WEBSITE </h3>
+                        <span class="work__button">Ver más
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                        <div class="portafolio__item-details">
+                            <h3 class="details_title">Proyecto personal</h3>
+                            <p class="details_descripcion">Este fue un proyecto personal, el cual esta basado en la marca de reloj Cassio con colaboracion GSHOCK, el cual es responsive y una pagina dinámica.</p>
+                            <ul class="details_info">
+                                <li>Creación : <span>10 Enero 2023</span></li>
+                                <li>Lenguajes : <span>HTML CSS JAVASCRIPT</span></li>
+                                <li>Rol : <span>Frontend</span></li>
+                                <li>Visualizar : <span><a href="https://saulsuvargas.github.io/G-SHOCK/" target="_blank">https://saulsuvargas.github.io/G-SHOCK/</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix app">
+                        <img src="img/reloj.png" alt="" class="work__img">
+                        <h3 class="work__title">RELOJ DIGITAL</h3>
+                        <span class="work__button">Ver más
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                        <div class="portafolio__item-details">
+                            <h3 class="details_title">Proyecto Personal</h3>
+                            <p class="details_descripcion">Entrando en el mundo de javascript, pude realizar con un par de tutoriales este reloj digital, el cual cuenta con la hora actual y con temas.</p>
+                            <ul class="details_info">
+                                <li>Creación : <span>15 Agosto 2022</span></li>
+                                <li>Lenguajes : <span>HTML CSS JAVASCRIPT</span></li>
+                                <li>Rol : <span>Frontend</span></li>
+                                <li>Visualizar : <span><a href="https://saulsuvargas.github.io/Reloj-Digital/" target="_blank">https://saulsuvargas.github.io/Reloj-Digital/</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix app">
+                        <img src="img/calculadora.png" alt="" class="work__img">
+                        <h3 class="work__title">CALCULADORA</h3>
+                        <span class="work__button">Ver más
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                        <div class="portafolio__item-details">
+                            <h3 class="details_title">Proyecto personal</h3>
+                            <p class="details_descripcion">Este fue uno de los primeros proyectos que realice, con conocimeintos basicos en html css y js. Gracias a varios tutoriales</p>
+                            <ul class="details_info">
+                                <li>Created - <span>10 septiembre 2022</span></li>
+                                <li>Lenguajes - <span>HTML CSS JAVASCRIPT</span></li>
+                                <li>Rol - <span>Frontend</span></li>
+                                <li>Visualizar - <span><a href="https://saulsuvargas.github.io/Calculadora-con-tema-oscuro-y-claro/" target="_blank">https://saulsuvargas.github.io/Calculadora-con-tema-oscuro-y-claro/</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PORTAFOLIO II-->
+            <div class="portafolio__popup">
+                <div class="portafolio__popup-inner">
+                    <div class="portafolio__popup-content grid">
+                        <span class="portafolio__popup-close"><i class="uil uil-times"></i></span>
+                        <div class="pp__thumbnail">
+                            <img src="img/alianza2.png" alt="" class="portafolio__popup-img">
+                        </div>
+                        <div class="portafolio__popup-info">
+                            <div class="portafolio__popup-subtitle">Presentación <span>WEBSITE</span></div>
+                            <div class="portafolio__popup-body">
+                                <h3 class="details_title">Proyecto academico.</h3>
+                                <p class="details_descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ratione earum maxime illum molestias quis, saepe amet beatae delectus commodi nemo quia assumenda, animi fugiat? Commodi tempore id aut amet?</p>
+                                <ul class="details_info">
+                                    <li>Creación : <span>10 septiembre 2022</span></li>
+                                    <li>Lenguajes : <span>HTML - CSS - JAVASCRIPT</span></li>
+                                    <li>Rol : <span>Frontend</span></li>
+                                    <li>Visualizar : <span><a href="https://saulsuvargas.github.io/senatiweb.io/" target="_blank">https://saulsuvargas.github.io/senatiweb.io/</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== SECCION CONTACTAME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__titulo">Contáctame</h2>
+                <span class="section__subtitulo">Ponerse en contacto</span>
+                
+                <div class="contac_container container grid">
+                        <div>
+                            <div class="contac_info">
+                                <i class="uil uil-phone contac_icon"></i>
+                                
+                                <div>
+                                    <h3 class="contac__titutlo">Llámame</h3>
+                                    <span class="contac_subtitulo">933664470</span>
+                                </div>
+                            </div>
+                            <div class="contac_info">
+                                <i class="uil uil-phone contac_icon"></i>
+                                
+                                <div>
+                                    <h3 class="contac__titutlo">Email</h3>
+                                    <span class="contac_subtitulo">lidiosaulsu@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contac_info">
+                                <i class="uil uil-phone contac_icon"></i>
+                                
+                                <div>
+                                    <h3 class="contac__titutlo">Ubicación</h3>
+                                    <span class="contac_subtitulo">Lima - Perú Av. Puente Piedra #473</span>
+                                </div>
+                            </div>
+                        </div>
+                    <form action="https://formsubmit.co/lidiosaulsu@gmail.com" method="POST" class="contac_form grid">
+                        <div class="contac_inputs grid">
+                            <div class="contac_content">
+                                <label for="" class="contac_label">Nombre</label>
+                                <input type="text" name="nombres" class="contac__input">
+                            </div>
+                            <div class="contac_content">
+                                <label for="" class="contac_label">Correo</label>
+                                <input type="email" name="correo" class="contac__input">
+                            </div>
+                        </div>
+                        <div class="contac_content">
+                            <label for="" class="contac_label">Projecto</label>
+                            <input type="text" name="Projecto" class="contac__input">
+                        </div>
+                        <div class="contac_content">
+                            <label for="" class="contac_label">Mensaje</label>
+                            <textarea name="" id="" name="Mensaje" cols="0" rows="7"class="contac__input"></textarea>
+                        </div>
+
+                        <div>
+                            <button class="boton boton-flex" type="submit">
+                                Enviar mensaje!
+                                <i class="uil uil-message boton_icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer_bg">
+                <div class="foter_container container grid">
+                    <div>
+                        <h1 class="foter_titulo">SaulSu</h1>
+                        <span class="foter_subtitulo">Developer</span>
+                    </div>
+                    <ul class="foter_links">
+                        <li>
+                            <a href="#servicios" class="foter_link">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="foter_link">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="foter_link">Contáctame</a>
+                        </li>
+                    </ul>
+
+                    <div class="foter_socials">
+                        <a href="https://www.facebook.com/saul.suvargas/" target="_blank" class="foter_social">
+                            <i class="uil-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/saulsuvargas/" target="_blank" class="foter_social">
+                            <i class="uil-instagram"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/lidio-saul-su-vargas-547982247/" target="_blank" class="foter_social">
+                            <i class="uil-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup_icon"></i>
+        </a>
+
+        <!--==================== MIXTUP ====================-->
+        <script src="js/mixitup.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
